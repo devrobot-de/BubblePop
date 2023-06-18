@@ -265,6 +265,7 @@ export class Game {
         });
 
         sound.src = url;
+        sound.load();  // add this line
         _this.openRequests++;
 
         return sound;
